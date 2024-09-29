@@ -1,7 +1,123 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ferienwohnung in [Ort] zur Vermietung. Ruhige Lage, voll ausgestattet, perfekte Erholung. Jetzt anfragen!">
+    <title>Ferienwohnung in [Ort] zu vermieten</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        section {
+            padding: 20px;
+            text-align: center;
+        }
+        .content {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .content img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px 0;
+        }
+        .features div {
+            width: 30%;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .contact-form {
+            margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        input, textarea {
+            padding: 10px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+
+<header>
+    <h1>Ferienwohnung in [Ort] zu vermieten</h1>
+</header>
+
+<section>
+    <div class="content">
+        <h2>Willkommen in unserer Ferienwohnung</h2>
+        <p>Unsere gemütliche Ferienwohnung befindet sich in der malerischen Region [Ort]. Ideal für Familien, Paare oder Alleinreisende, die eine erholsame Auszeit suchen. Die Wohnung ist komplett ausgestattet und bietet eine wunderschöne Aussicht auf die umliegende Natur.</p>
+        
+        <img src="bild-ferienwohnung.jpg" alt="Ferienwohnung">
+
+        <div class="features">
+            <div>
+                <h3>Komplett ausgestattet</h3>
+                <p>Moderne Küche, WLAN, TV, Bettwäsche, Handtücher – alles, was du brauchst.</p>
+            </div>
+            <div>
+                <h3>Perfekte Lage</h3>
+                <p>Nur 5 Gehminuten zum Strand und nah an allen wichtigen Sehenswürdigkeiten.</p>
+            </div>
+            <div>
+                <h3>Ab 80€ pro Nacht</h3>
+                <p>Günstige Preise für die Nebensaison, Rabatte für längere Aufenthalte.</p>
+            </div>
+        </div>
+
+        <h3>Buchungsanfrage</h3>
+        <form class="contact-form" action="/submit" method="post">
+            <input type="text" name="name" placeholder="Dein Name" required>
+            <input type="email" name="email" placeholder="Deine E-Mail" required>
+            <input type="text" name="dates" placeholder="Gewünschte Reisedaten" required>
+            <textarea name="message" placeholder="Nachricht" rows="5"></textarea>
+            <button type="submit">Anfrage senden</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>Kontakt: [Deine Telefonnummer] | E-Mail: [Deine E-Mail-Adresse]</p>
+    <p>&copy; 2024 Ferienwohnung [Ort]. Alle Rechte vorbehalten.</p>
+</footer>
+
 </body>
 </html>
