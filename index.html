@@ -6,88 +6,185 @@
     <meta name="description" content="Ferienwohnung in [Ort] zur Vermietung. Ruhige Lage, voll ausgestattet, perfekte Erholung. Jetzt anfragen!">
     <title>Ferienwohnung in [Ort] zu vermieten</title>
     <style>
+        /* Allgemeine Stile */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f2f5;
             color: #333;
+            line-height: 1.6;
         }
+
         header {
-            background-color: #4CAF50;
+            background-image: url('header-background.jpg');
+            background-size: cover;
+            background-position: center;
             color: white;
-            padding: 10px 0;
+            padding: 60px 20px;
             text-align: center;
         }
+
         header h1 {
+            font-size: 3em;
+            font-weight: bold;
             margin: 0;
-            font-size: 2.5em;
         }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: 300;
+        }
+
+        /* Hauptinhalt */
         section {
-            padding: 20px;
+            padding: 40px 20px;
             text-align: center;
         }
+
         .content {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
-            text-align: left;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
         }
+
+        .content h2 {
+            font-size: 2.5em;
+            color: #4CAF50;
+        }
+
+        .content p {
+            font-size: 1.1em;
+            color: #555;
+        }
+
         .content img {
             max-width: 100%;
             height: auto;
-            margin: 20px 0;
-            border-radius: 8px;
+            margin: 30px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         }
+
+        /* Ausstattungs-Features */
         .features {
             display: flex;
-            justify-content: space-between;
-            margin: 20px 0;
+            justify-content: space-around;
+            text-align: left;
+            margin-top: 40px;
         }
+
         .features div {
             width: 30%;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
         }
+
+        .features h3 {
+            font-size: 1.4em;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+
+        .features p {
+            font-size: 1em;
+            color: #777;
+        }
+
+        /* Kontaktformular */
+        form.contact-form {
+            margin-top: 50px;
+            text-align: left;
+        }
+
+        .contact-form input, 
+        .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            font-size: 1em;
+            background-color: #f9f9f9;
+        }
+
+        .contact-form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: #45a049;
+        }
+
+        /* Footer */
         footer {
             background-color: #333;
             color: white;
-            text-align: center;
             padding: 20px;
-            margin-top: 20px;
+            text-align: center;
+            margin-top: 40px;
         }
-        .contact-form {
-            margin-top: 30px;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
+
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
         }
-        input, textarea {
-            padding: 10px;
-            width: 100%;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        button {
-            padding: 10px;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
+
+        @media (max-width: 768px) {
+            .features {
+                flex-direction: column;
+            }
+
+            .features div {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            header h1 {
+                font-size: 2.5em;
+            }
+
+            header p {
+                font-size: 1.1em;
+            }
+
+            .content h2 {
+                font-size: 2em;
+            }
         }
     </style>
 </head>
 <body>
 
+<!-- Header mit Hintergrundbild und Überschrift -->
 <header>
     <h1>Ferienwohnung in [Ort] zu vermieten</h1>
+    <p>Erholung und Komfort in einer traumhaften Umgebung</p>
 </header>
 
+<!-- Hauptinhalt -->
 <section>
     <div class="content">
         <h2>Willkommen in unserer Ferienwohnung</h2>
-        <p>Unsere gemütliche Ferienwohnung befindet sich in der malerischen Region [Ort]. Ideal für Familien, Paare oder Alleinreisende, die eine erholsame Auszeit suchen. Die Wohnung ist komplett ausgestattet und bietet eine wunderschöne Aussicht auf die umliegende Natur.</p>
-        
-        <img src="bild-ferienwohnung.jpg" alt="Ferienwohnung">
+        <p>Unsere moderne und gemütliche Ferienwohnung liegt in einer der schönsten Regionen von [Ort]. Sie bietet den perfekten Rückzugsort für Erholungssuchende und Abenteurer. Mit voll ausgestatteter Küche, schnellem WLAN und einer großen Terrasse kannst du deinen Aufenthalt in vollen Zügen genießen.</p>
 
+        <!-- Bild der Ferienwohnung -->
+        <img src="ferienwohnung-bild.jpg" alt="Ferienwohnung in [Ort]">
+
+        <!-- Features der Ferienwohnung -->
         <div class="features">
             <div>
                 <h3>Komplett ausgestattet</h3>
@@ -95,25 +192,27 @@
             </div>
             <div>
                 <h3>Perfekte Lage</h3>
-                <p>Nur 5 Gehminuten zum Strand und nah an allen wichtigen Sehenswürdigkeiten.</p>
+                <p>Nur wenige Minuten zu Fuß zum Strand und den besten Restaurants der Region.</p>
             </div>
             <div>
-                <h3>Ab 80€ pro Nacht</h3>
-                <p>Günstige Preise für die Nebensaison, Rabatte für längere Aufenthalte.</p>
+                <h3>Günstige Preise</h3>
+                <p>Ab nur 80€ pro Nacht, mit besonderen Angeboten für längere Aufenthalte.</p>
             </div>
         </div>
 
+        <!-- Kontaktformular -->
         <h3>Buchungsanfrage</h3>
         <form class="contact-form" action="/submit" method="post">
             <input type="text" name="name" placeholder="Dein Name" required>
             <input type="email" name="email" placeholder="Deine E-Mail" required>
             <input type="text" name="dates" placeholder="Gewünschte Reisedaten" required>
-            <textarea name="message" placeholder="Nachricht" rows="5"></textarea>
+            <textarea name="message" placeholder="Deine Nachricht" rows="5"></textarea>
             <button type="submit">Anfrage senden</button>
         </form>
     </div>
 </section>
 
+<!-- Footer mit Kontaktinformationen -->
 <footer>
     <p>Kontakt: [Deine Telefonnummer] | E-Mail: [Deine E-Mail-Adresse]</p>
     <p>&copy; 2024 Ferienwohnung [Ort]. Alle Rechte vorbehalten.</p>
